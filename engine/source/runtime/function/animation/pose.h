@@ -12,6 +12,8 @@ namespace Pilot
         bool                   m_reorder {false};
         std::vector<int>       m_bone_indexs;
         BoneBlendWeight        m_weight;
+
+    public:
         AnimationPose();
         AnimationPose(const AnimationClip& clip, float ratio, const AnimSkelMap& animSkelMap);
         AnimationPose(const AnimationClip& clip, const BoneBlendWeight& weight, float ratio);

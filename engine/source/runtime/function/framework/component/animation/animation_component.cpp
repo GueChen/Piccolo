@@ -102,7 +102,7 @@ namespace Pilot
                 else
                 {
                     m_ratio = 0;
-                }
+                }               
                 break;
             }
         }
@@ -136,7 +136,7 @@ namespace Pilot
 
     void AnimationComponent::animateBasicClip(float desired_ratio, BasicClip* basic_clip)
     {
-        auto                       clip_data = AnimationManager::getClipData(*basic_clip);
+        auto clip_data = AnimationManager::getClipData(*basic_clip);
 
             AnimationPose pose(clip_data.m_clip,
                                desired_ratio,
