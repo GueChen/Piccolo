@@ -37,5 +37,10 @@ namespace Pilot
     private:
         Capsule        m_capsule;
         RigidBodyShape m_rigidbody_shape;
+
+        // flags for climbing and going down staris status
+        bool is_climb_stair = false;
+        bool is_down_stair  = false;
+        int  climb_count    = 0;
     };
 } // namespace Pilot
